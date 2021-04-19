@@ -1,28 +1,27 @@
-## Objectives
+# Data Journalism and D3
 
-* Gain a high-level understanding of SVG elements and how to append/modify them using D3.
-* Understand how to bind data to SVG elements using D3 so as to create basic bar charts from scratch.
-* Create a bar chart with axes using D3 so as to visualize data.
-* Create different types of charts and graphs using D3.
-* Cover scales in greater depth.
-* Plot multiple columns from a dataset, either simultaneously or in alternation.
-* Gain a better understanding of reusable code.
+![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
 
-- - -
+## Background
 
-## Key activities from the week
+Welcome to the newsroom! You've just accepted a data visualization position for a major metro paper. You're tasked with analyzing the current trends shaping people's lives, as well as creating charts, graphs, and interactive elements to help readers understand your findings.
 
-### Lesson - Binding Data
+The editor wants to run a series of feature stories about the health risks facing particular demographics. She's counting on you to sniff out the first story idea by sifting through information from the U.S. Census Bureau and the Behavioral Risk Factor Surveillance System.
 
-Bind data values to HTML list elements using D3.
-[Watch the Video](https://youtu.be/zPh_bMl43SA)
+The data set included with the assignment is based on 2014 ACS 1-year estimates: [https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml](https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml), but you are free to investigate a different data set. The current data set includes data on rates of income, obesity, poverty, etc. by state. MOE stands for "margin of error."
 
-### Lesson - D3 Table
+## Task
 
-Create a D3 Table using data binding. 
-[Watch the Video](https://youtu.be/fPMnnSEC5Gs)
+### Core Assignment: D3 Dabbler (Required Assignment)
 
-### Lesson - Enter, Exit, Update
+![4-scatter](Images/4-scatter.jpg)
 
-Manipulate images on a page to represent data using D3.
-[Watch the Video](https://youtu.be/ZAcb57vWeEg)
+You need to create a scatter plot between two of the data variables such as `Healthcare vs. Poverty` or `Smokers vs. Age`.
+
+Using the D3 techniques we taught you in class, create a scatter plot that represents each state with circle elements. You'll code this graphic in the `app.js` file of your homework directory—make sure you pull in the data from `data.csv` by using the `d3.csv` function. Your scatter plot should ultimately appear like the image at the top of this section.
+
+* Include state abbreviations in the circles.
+
+* Create and situate your axes and labels to the left and bottom of the chart.
+
+* Note: You'll need to use `python -m http.server` to run the visualization. This will host the page at `localhost:8000` in your web browser.
